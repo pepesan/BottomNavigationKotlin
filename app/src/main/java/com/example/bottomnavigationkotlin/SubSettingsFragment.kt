@@ -37,7 +37,8 @@ class SubSettingsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_sub_settings, container, false)
-        (activity as MainActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false);
+        // para que funcione el volver en la toolbar
+        (activity as MainActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true);
         return root
     }
 

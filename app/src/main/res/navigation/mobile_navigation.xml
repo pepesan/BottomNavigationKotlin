@@ -24,7 +24,8 @@
         tools:layout="@layout/settings_fragment" >
         <action
             android:id="@+id/action_navigation_settings_to_subSettingsFragment"
-            app:destination="@id/subSettingsFragment" />
+            app:destination="@id/subSettingsFragment"
+            app:popUpTo="@id/navigation_settings" />
     </fragment>
 
     <fragment
